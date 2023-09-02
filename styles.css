@@ -1,20 +1,71 @@
 body {
+    font-family: roboto;
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: space-between;
+}
+
+body > div {
+    padding: 20px 300px;
+}
+
+#sponsor, #info, #testimonials, #signup-area {
+    flex: 1;
+}
+
+#header, #sponsor {
+    background-color: #1F2937;
+    display: flex;
 }
 
 #header {
-    background-color: #1F2937;
-    display: flex;
-    padding: 0 300px;
     gap: 20px;
+}
+
+#footer {
+    min-height: 50px;
+}
+
+#sponsor {
+    max-height: 300px;
+}
+
+#sponsor > div {
+    flex: 1;
 }
 
 #logo {
     font-size: 24px;
     color: #f9faf8
+}
+
+#hero1 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#sponsor-header {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+#sponsor-para {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 10px 0;
+}
+
+#sponsor-button {
+    margin-top: 20px;
+}
+
+#boburnham {
+    width: 625px;
+    height: 300px;
+    object-fit: contain;
 }
 
 #hl1 {
@@ -28,4 +79,13 @@ body {
 
 a {
     text-decoration: none;
+}
+
+button {
+    background-color: #3882f6;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 100px;
+    height: 25px;
 }
